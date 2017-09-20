@@ -1,0 +1,23 @@
+<html>
+<head>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<script>
+	$(function()
+	{
+		var clicks=$("#clicks");
+
+		clicks.click(function()
+			{
+				clicks.hide("slow",function()
+					{
+						alert("hello");
+					});
+				
+			});
+	})
+	</script>
+	<body>
+		<button id="clicks">Click here</button>
+	</body>
+</html>
